@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <title>Requests |SRCA</title>
+
+</head>
+
+<body>
+    <div class="popup" id="success">
+        <div class="popup-inner">
+
+            <a class="close" href="main.html">&times;</a>
+
+
+            <br>
+            <p>Your request has been sent successfully</p>
+
+        </div>
+    </div>
+    <div class="topnav">
+        <i class="active">Requests</i>
+
+    </div>
+    <nav class="main-nav hamburger-menu">
+
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <span class="custom-dropdown big">
+            <select>
+                <option>Service Type</option>
+                <option>Request Vacation</option>
+                <option>Request work shifts change</option>
+                <option>Request work days change</option>
+
+            </select>
+
+        </span>
+        <span class="custom-dropdown small">
+            <select>
+                <option>Priority</option>
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+
+            </select>
+        </span>
+
+        <span class="custom-dropdown small">
+            <select>
+                <option>Month</option>
+                <option>January</option>
+                <option>February </option>
+                <option>March </option>
+                <option>April </option>
+                <option>May </option>
+                <option>June </option>
+                <option>July </option>
+                <option>August </option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+
+            </select>
+
+        </span>
+        <span class="custom-dropdown small">
+            <select>
+                <option>Year</option>
+                <option>2022</option>
+                <option>2023 </option>
+                <option>2024 </option>
+                <option>2025 </option>
+                <option>2026 </option>
+                <option>2027 </option>
+                <option>2028 </option>
+                <option>2029 </option>
+                <option>2030</option>
+                <option>2031</option>
+                <option>2032</option>
+                <option>2033</option>
+
+            </select>
+        </span>
+
+        <a href="#success"><button class="sendbutton"> SEND
+            </button></a>
+        <div><img class="img1" src="assets/Calender.png"></div>
+        <ul class="menu__box">
+            <div class="search-container">
+                <input type="text" autocomplete="off" name="search" placeholder="Search..." class="search-input"
+                    required>
+                <button type="submit" name="input" value="search">
+                    <i class="fas fa-search"></i>
+            </div>
+            <li><a class="menu__item" href="main.html"><img src="assets/Icons/Home.png"> Home</a> </li>
+            <li><a class="menu__item" href="profile.html"><img src="assets/Icons/Home.png"> Profile</a>
+                <label>•Personal Information<br>•Work hours</label>
+            </li>
+            <li><a class="menu__item" href="messages.html"><img src="assets/Icons/Messages.png"> Messages</a>
+                <label>•Mail<br>•Notices</label>
+            </li>
+            <li><a class="menu__item" href="schedule.html"><img src="assets/Icons/Schedule.png"> Schedule</a>
+                <label>•Shifts Schedule<br>•Date<br>•Holidays</label>
+            </li>
+            <li><a class="menu__item" href="requests.html"><img src="assets/Icons/plus.png"> Requests</a>
+
+            </li>
+            <li><a class="menu__item" href="Login.html"><img src="assets/Icons/LOGOUT25X25.png"> Logout</a>
+
+        </ul>
+    </nav>
+    </div>
+
+
+
+
+
+
+
+</body>
+<style>
+    .big {
+        font-size: 1.2em;
+    }
+
+    .small {
+        font-size: 1.2em;
+    }
+
+
+
+    /* Custom dropdown */
+    .custom-dropdown {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px;
+        left: 750px;
+        top: 50px;
+        width: 100%;
+
+    }
+
+    .custom-dropdown select {
+        background-color: white;
+        color: #5533FF;
+        font-weight: bold;
+        font-size: inherit;
+        font-family: 'Fira Sans', sans-serif;
+        padding: .5em;
+        padding-right: 2.5em;
+        border: 0;
+        margin: 0;
+        border-radius: 3px;
+        text-indent: 0.01px;
+        text-overflow: '';
+        -webkit-appearance: button;
+
+    }
+
+    .custom-dropdown::before,
+    .custom-dropdown::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .custom-dropdown::after {
+        /*  Custom dropdown arrow */
+        content: "\25BC";
+        height: 1em;
+        font-size: .625em;
+        line-height: 1;
+        right: 1.2em;
+        top: 50%;
+        margin-top: -.5em;
+    }
+
+    .custom-dropdown::before {
+        /*  Custom dropdown arrow cover */
+        width: 2em;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .custom-dropdown select[disabled] {
+        color: rgba(0, 0, 0, .3);
+    }
+
+    .custom-dropdown select[disabled]::after {
+        color: rgba(0, 0, 0, .1);
+    }
+
+    .custom-dropdown::before {
+        background-color: rgba(0, 0, 0, .15);
+    }
+
+    .custom-dropdown::after {
+        color: rgba(0, 0, 0, .4);
+    }
+
+    .topnav {
+        background-color: #A61320;
+        overflow: hidden;
+
+    }
+
+    .topnav i {
+        margin-left: 40%;
+        font-family: 'Roboto';
+        color: #EED1D6;
+        text-align: center;
+        padding: 14px 16px;
+        font-style: normal;
+        font-size: 64px;
+    }
+
+    label {
+        margin-left: 75px;
+        font-size: 11px;
+        font-family: 'Roboto , Regular', sans-serif;
+        color: white;
+        display: block;
+        width: x;
+        height: y;
+        text-align: left;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+
+
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+        margin-top: 20px;
+    }
+
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background-color: #FFFFFF;
+        transition: 0.3s;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__box {
+        border-radius: 0px 35px 35px 0px;
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #C51E2D;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        transition: 0.3s;
+    }
+
+    .menu__item {
+        margin-left: 50px;
+        display: flex;
+        padding: 12px 24px;
+        color: #FFFFFF;
+        font-family: 'Roboto , Regular', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+
+    }
+
+    .menu__item:hover {
+        color: #ffffffa2;
+        background-color: transparent;
+    }
+
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked~.menu__box {
+        visibility: visible;
+        left: 0;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 325px;
+        width: 20%;
+    }
+
+
+
+    body {
+
+        background-position: center 350px;
+
+        overflow-x: hidden;
+        background-color: #F5F5F5;
+
+
+
+    }
+
+    /* From uiverse.io by @barisdogansutcu */
+    .sendbutton {
+        padding: 17px 40px;
+        border-radius: 50px;
+        border: 0;
+        background-color: white;
+        box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-size: 15px;
+        transition: all .5s ease;
+        margin-top: 350px;
+        margin-left: 850px;
+    }
+
+    .sendbutton:hover {
+        letter-spacing: 3px;
+        background-color: hsl(261deg 80% 48%);
+        color: hsl(0, 0%, 100%);
+        box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+    }
+
+    .sendbutton:active {
+        letter-spacing: 3px;
+        background-color: hsl(261deg 80% 48%);
+        color: hsl(0, 0%, 100%);
+        box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+        transform: translateY(2px);
+        transition: 100ms;
+    }
+
+    .popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .popup .close:hover {
+        color: grey;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .button {
+        padding: 10px 14px;
+        background-color: black;
+        color: #FFF;
+        text-decoration: none;
+        margin: 0px 8px;
+        text-transform: uppercase;
+        border-radius: 10px;
+        font-weight: 550;
+        display: inline-block;
+
+    }
+
+    .popup {
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.4s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+    }
+
+    .popup-inner {
+        background-color: #FFF;
+        padding: 32px 16px;
+        max-width: 768px;
+        max-height: calc(50vh - 100px);
+        overflow-y: auto;
+        border-radius: 8px;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        border: 1px #d8d8d8;
+        position: relative;
+        background-color: #F5F5F5;
+        background-size: 300% 300%;
+        text-align: center;
+
+    }
+
+
+    .popup-inner h3 {
+        color: #666;
+        font-size: 24px;
+        margin-bottom: 16px;
+        display: inline;
+        text-align: center;
+
+    }
+
+    .popup-inner p {
+        color: #000;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+
+        text-align: left;
+        text-justify: inter-word;
+    }
+
+    .popup:target {
+        opacity: 1;
+        pointer-events: all;
+        text-align: center;
+    }
+
+    .img1 {
+        position: relative;
+        bottom: 350px;
+        left: 750px;
+        
+
+    }
+</style>
+
+</html>

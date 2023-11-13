@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <title>Forgot Password |SRCA</title>
+
+</head>
+
+<body>
+
+    <div class="login">
+
+        <a href="Login.html">
+            <img id="main_image" src="assets/dawewa3.png">
+        </a>
+
+
+        <form required action="forgotpass3.html" autocomplete="off">
+
+            <input type="password" required id="input_field" placeholder="6-PIN CODE" maxlength="6" minlength="6"
+                style="font-size:20pt;color: white;background-color:rgba(0, 0, 0, 0);">
+
+
+            <div id="wrapper">
+                <a href="forgotpass3.html">
+                    <!---Redirect to main page--->
+                    <button type="submit" class="loginbtn">VERIFY</button>
+                </a>
+        </form>
+
+    </div>
+
+    </div>
+
+</body>
+<style>
+    img {
+        filter: invert(12%) sepia(97%) saturate(4782%) hue-rotate(358deg) brightness(70%) contrast(115%);
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-left: 25px;
+        opacity: 65%;
+
+
+
+
+    }
+
+    body {
+
+
+        background: rgba(0, 0, 0, 0.4) url('assets/62205.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+
+
+    input {
+        margin-bottom: 5px;
+        border-radius: 5px;
+        border-color: #FFFFFF;
+
+    }
+
+    .login {
+
+        width: 300px;
+        position: fixed;
+        top: 125px;
+        left: 775px;
+        bottom: 0;
+        right: 0;
+        padding: 5px;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    ::-webkit-input-placeholder {
+
+        font-size: 16px;
+        font-family: 'Montserrat';
+        color: #FFFFFF;
+
+
+    }
+
+
+
+    #wrapper {
+        width: 100%;
+        height: 75px;
+        /*border:5px solid black;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .loginbtn {
+
+        align-items: center;
+        background-color: #fff;
+        border: 2px solid #000;
+        box-sizing: border-box;
+        color: #000;
+        cursor: pointer;
+        display: inline-flex;
+        fill: #000;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        height: 48px;
+        justify-content: center;
+        letter-spacing: -.8px;
+        line-height: 24px;
+        min-width: 140px;
+        outline: 0;
+        padding: 0 17px;
+        text-align: center;
+        text-decoration: none;
+        transition: all .3s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 331px;
+        margin-left: 37.5px;
+
+    }
+
+    .loginbtn:focus {
+        color: #171e29;
+    }
+
+    .loginbtn:hover {
+        border-color: #06f;
+        color: #06f;
+        fill: #06f;
+    }
+
+    .loginbtn:active {
+        border-color: #06f;
+        color: #06f;
+        fill: #06f;
+    }
+
+    @media (min-width: 768px) {
+        .loginbtn {
+            min-width: 170px;
+        }
+    }
+
+    .forgotpass {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        cursor: pointer;
+        width: 100%;
+        margin-left: 250px;
+
+    }
+
+    .userpasslabels {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+
+        width: 100%;
+
+
+    }
+
+    .forgotpass:hover {
+
+        color: rgb(214, 214, 214);
+
+    }
+</style>
+
+</html>
