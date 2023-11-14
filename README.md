@@ -12,7 +12,7 @@ scheduling shifts and handling requests.
 
 
 ## Author
-👤 **Rayan Ahmed ,  **ibrahim Alghofili , **Abdullah Aldosari , **Abdullah Alolayan , **Yamen Hijazi
+👤 **Rayan Ahmed** ,  **ibrahim Alghofili** , **Abdullah Aldosari** , **Abdullah Alolayan** , **Yamen Hijazi**
 ## Show your support
 Give a ⭐️ if this project helped you!
 ***
